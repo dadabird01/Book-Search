@@ -1,0 +1,106 @@
+* {
+  font-family: serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-image: url("../img/bg.jpg");
+  background-color: gainsboro;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  display: flex;
+}
+.searchBar > * {
+  align-self: center;
+}
+
+.search {
+  padding: 10px;
+  width: 300px;
+  height: 30px;
+  border-radius: 15px;
+}
+.search:hover {
+  box-shadow: 0 0 10px rgba(36, 26, 26, 0.5);
+}
+
+.submitBtn {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: rgb(13, 115, 146);
+  color: white;
+}
+.submitBtn:hover {
+  box-shadow: 0 0 10px gray;
+}
+
+.booklist {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+.book {
+  display: flex;
+  margin: 40px 20px;
+  align-items: center;
+  padding: 20px 0 20px 100px;
+  transition: 0.5s;
+}
+.book:hover {
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+}
+
+span {
+  letter-spacing: 1px;
+  margin: 5px 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 20px 20px 50px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    color: rgb(48, 21, 6);
+    text-align: center;
+  }
+
+@media only screen and (max-width: 900px) {
+  .book {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .info {
+    margin: 20px 0;
+  }
+}
