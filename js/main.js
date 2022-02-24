@@ -50,8 +50,10 @@ function addItem(book) {
             <div class="info">
               <span>book title : ${book.volumeInfo.title}</span>
               <span>author : ${book.volumeInfo.authors}</span>
+              <span>date of publication : ${book.volumeInfo.publishedDate}</span>
             </div>
           </div>
 	`;
   return list_html;
 }
+
